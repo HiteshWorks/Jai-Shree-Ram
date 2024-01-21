@@ -44,7 +44,7 @@ export const Show: React.FC<ShowProps> = ({ name }) => {
       )}
 
       <div className="flex">
-        <img className="h-screen" src="./public/RamShow.png" alt="Ram pics" />
+        <img className="h-screen" src="/RamShow.png" alt="Ram pics" />
         <div className="showContainer shadow-xl shadow-gray-400 text-red-600 p-5 text-2xl leading-relaxed bg-orange-200 absolute top-44 left-[25%] rounded-lg h-[50vh] w-[50vw]">
           Heartfelt congratulations to everyone on the auspicious occasion of
           the Shree Ram Mandir inauguration in Ayodhya. May the temple stand as
@@ -58,7 +58,7 @@ export const Show: React.FC<ShowProps> = ({ name }) => {
         </div>
         <img
           className="h-screen absolute right-0 z-[-1]"
-          src="./public/RamShow.png"
+          src="/RamShow.png"
           alt="Ram pics"
         />
       </div>
