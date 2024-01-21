@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect,  useState } from "react";
 import ConfettiExplosion from "react-confetti-explosion";
 import { Show } from "./Show";
 
@@ -9,6 +9,8 @@ function App() {
   const [name, setName] = useState<string>();
   const [handScale, setHandScale] = useState(1);
   const [isfirstPage, setIsFirstPage] = useState(true);
+
+  
 
   const hexColorCodes = [
     "#FFDDC1",
@@ -88,17 +90,20 @@ function App() {
     const intervalCount = setInterval(() => {
       setCount((prevCount) => (prevCount === 0 ? 1 : 0));
     }, 1000);
-
+    
+    
     return () => {
       clearInterval(intervalCount);
       clearInterval(arrowScaleInterval);
     };
   }, []);
+ 
 
   document.body.style.backgroundColor = color;
 
   return isfirstPage ? (
     <>
+    
       {count === 0 && (
         <div className="flex ">
           <div>
@@ -128,7 +133,7 @@ function App() {
       </div>
       <div className="flex-col absolute top-0 left-[38vw]">
         <input
-          required
+          
           style={{ transition: "opacity 2s ease-in-out", opacity: opacity }}
           onChange={(e) => {
             setName(e.target.value);

@@ -8,12 +8,15 @@ interface ShowProps {
 
 export const Show: React.FC<ShowProps> = ({ name }) => {
   const [count, setCount] = useState(0);
+ 
 
   useEffect(() => {
     let interval = setInterval(() => {
       setCount((prevCount) => (prevCount === 0 ? 1 : 0));
     }, 1000);
 
+  
+     
     return () => {
       clearInterval(interval);
     };
@@ -21,6 +24,7 @@ export const Show: React.FC<ShowProps> = ({ name }) => {
 
   return (
     <>
+    
       {count == 0 && (
         <>
           <div>
