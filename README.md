@@ -4,4 +4,4 @@
  > This is a project dedicated in the holy feets of Prabhu Ram!
 ---
 ### Shots 
-![Alt Text](./public/readme1)
+![Alt Text](./public/readme1.png)
