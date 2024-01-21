@@ -23,7 +23,7 @@ Make sure you have Node.js and npm installed on your machine.
 ```bash
 git clone https://github.com/YourUsername/YourProject.git
 
-
+```
 ### Go to the directory
 cd directory
 
